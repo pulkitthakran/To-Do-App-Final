@@ -60,26 +60,6 @@ p.button:hover {
   color: inherit;
 }
 
-.container {
-  width: 100vw;
-  min-height: 100vh;
-  background-image: url("../img/bg-desktop-light.jpg");
-  background-color: #fafafa;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-[data-theme="darkTheme"] .container {
-  background: url("../img/bg-desktop-dark.jpg");
-  background-color: #171823;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .todo {
   width: 100%;
   max-width: 540px;
@@ -100,14 +80,30 @@ p.button:hover {
   letter-spacing: 15px;
 }
 
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../img/bg-desktop-light.jpg");
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+[data-theme="darkTheme"] .container {
+  background: url("../img/bg-desktop-dark.jpg");
+  background-color: #171823;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .theme {
   background-color: transparent;
   border: none;
 }
-
-
-
-
 
 .taskInput {
   font-size: 1.8rem;
