@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="img/png" sizes="32x32" href="./img/favicon-32x32.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>ToDo App</title>
+  </head>
+
+  <body data-theme="darkTheme">
+    <div class="container">
+      <div class="todo">
+        <header class="header">
+          <section class="logo">
+            <h2 class="title">To Do App</h2>
+            <button class="button theme" id="theme-toggle">
+              <img
+                class="switcher--hide"
+                src="./img/icon-moon.svg"
+                alt="apply light theme mode"
+              />
+              <img src="./img/icon-sun.svg" alt="apply dark theme mode" />
+            </button>
+          </section>
+          <div class="headerToDo">
+            <div class="checkBox"></div>
+            <label for="todo-input">Create a new todo</label>
+            <input
+              type="text"
+              class="taskInput"
+              name="todo-input"
+              id="todo-input"
+              placeholder="Create a new todo..."
+            />
+          </div>
+        </header>
+
+        <main class="main">
+          <ul class="taskList" id="todo-list"></ul>
+          <div class="filterTask">
+            <div class="filterTask_sides">
+              <p class="button"><span id="items-left">0</span> items left</p>
+              <button class="button button--clear" id="clear-completed">
+                Clear Completed
+              </button>
+            </div>
+            <div class="filterTask_center">
+              <input type="radio" name="filter" id="all" value="all" class="bold" checked/>
+              <label class="bold" for="all">
+                All
+              </label>
+              <input type="radio" name="filter" id="active" value="active" class="bold"/>
+              <label class="bold" for="active">
+                Active
+              </label>
+              <input type="radio" name="filter" id="completed" value="completed" class="bold"/>
+              <label class="bold" for="completed">
+                Completed
+              </label>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
